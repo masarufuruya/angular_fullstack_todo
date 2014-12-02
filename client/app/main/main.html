@@ -1,31 +1,60 @@
-<div ng-include="'components/navbar/navbar.html'"></div>
+<div id="wrap">
+  <div class="header wrapper">
+    <div class="logo left"><a href="/">Taskal</a></div>
+    <ul class="menu mainmenu right">
+      <li><a href="/signup">Sign Up</a></li>
+      <li><a href="/login">Login</a></li>
+    </ul>
+  </div>
 
-<header class="hero-unit" id="banner">
-  <div class="container">
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron" style="color:black;">
-      <h1>Ansible Full Stack Todo</h1>
-      <p>Node.js+PHP+AngularJS+MongoなTodoアプリです。</p>
-      <p><a href="/auth/facebook" class="btn btn-primary btn-lg" role="button">Facebookログイン</a></p>
+  <div class="main">
+    <div class="wrapper">
+      <div class="left left-box">
+          <div id="CurrentTask" class="cf">
+            <div class="left">
+                <div class="time">0:38:16</div>
+                <div class="name">Reading Toggl.com</div>
+            </div>
+            <div class="right">
+              <button class="btn btn-primary" style="padding:15px;">STOP</button>
+            </div>
+          </div>
+
+          <div id="PastTask">
+            <ul class="past-tasks">
+              <li>Going over Excel spreadsheets<span class="right">2:00</span></li>
+              <li>Going over Excel spreadsheets<span class="right">2:00</span></li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="right right-box">
+        <p class="right-text-box">Insanely simple time tracking</p>
+        <h1>Taskal kills timesheets</h1>
+        <button class="btn btn-info left">Sign up</button>
+        <button class="btn btn-default">Take the tour</button>
+      </div>
     </div>
   </div>
-</header>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">すごい機能たち</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
-        <li><a href="#" tooltip="{{thing.info}}">{{thing.name}}</a></li>
-      </ul>
+  <div class="footer">
+    <div class="wrapper cf">
+      <p class="left">
+        © Taskal
+        <a href="/terms">Terms &amp; conditions</a>
+        <a href="/privacy">Privacy</a>
+        <a href="http://support.toggl.com/toggl-on-my-desktop/#download" class="trackable" data-ga="DownloadFromPublic" target="_blank">Download</a>
+        <a href="//toggl.com/public/api">API</a>
+        <a href="http://support.toggl.com/press-kit/" target="_blank">PRESS</a>
+        <a href="http://jobs.toggl.com" target="_blank">JOBS</a>
+      </p>
+
+      <p class="right">
+        Managing teams? <a href="https://teamweek.com/" target="_blank">Try Teamweek</a>
+      </p>
+
     </div>
+
   </div>
+
 </div>
-
-<footer class="footer">
-  <div class="container">
-      <p>Angular Fullstack v2.0.13 |
-        <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
-         <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
-  </div>
-</footer>
